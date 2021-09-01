@@ -398,6 +398,7 @@ header {
   position: absolute;
   top: 204px;
   left: 60px;
+  z-index: 100;
 }
 
 .about-us-icon-facebook {
@@ -405,6 +406,7 @@ header {
   width: 28px;
   height: 28px;
   margin-right: 10px;
+  background-color: rgba(128, 128, 128, 0.514);
 }
 
 .about-us-icon-twitter {
@@ -412,6 +414,7 @@ header {
   width: 28px;
   height: 28px;
   margin-right: 10px;
+  background-color: rgba(128, 128, 128, 0.514);
 }
 
 .about-us-icon-google {
@@ -419,12 +422,14 @@ header {
   width: 28px;
   height: 28px;
   margin-right: 10px;
+  background-color: rgba(128, 128, 128, 0.514);
 }
 
 .about-us-icon-linkedin {
   background: url(img/linkedin.png) 50% 50% no-repeat;
   width: 28px;
   height: 28px;
+  background-color: rgba(128, 128, 128, 0.514);
 }
 
 .slick-prev {
@@ -465,5 +470,11 @@ header {
 .slick-prev,
 .slick-next {
   top: 35%;
+}
+
+.about-us-slider-all:hover img {
+  opacity: 1;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.767);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.767);
 }
 /*# sourceMappingURL=style.css.map */
