@@ -167,6 +167,7 @@ header {
     font-size: 16px;
     font-weight: $regular;
     color: $font-gray;
+    text-align: center;
   }
 }
 
@@ -439,11 +440,12 @@ header {
   }
 
   .welcome-to-startup-link {
-    width: 290px;
+    width: 100%;
   }
 
   .welcome-to-startup-text {
     font-size: 16px;
+    text-align: center;
   }
 
   .about-us {
@@ -465,19 +467,25 @@ header {
   .services-about-items-margin {
     margin-bottom: 0;
   }
+
+  .slick-slider {
+    left: -18px;
+  }
+
   .slick-list {
     left: 24px;
   }
 
   .slick-prev:before {
-    display: none;
+    display: none !important;
   }
   .slick-next:before {
-    display: none;
+    display: none !important;
   }
-  .slick-prev,
-  .slick-arrow,
-  .slick-next {
-    display: none;
+  .slick-arrow {
+    display: none !important;
+  }
+  .slick-prev {
+    display: none !important;
   }
 }

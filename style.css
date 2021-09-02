@@ -200,6 +200,7 @@ header {
   font-size: 16px;
   font-weight: 400;
   color: #555555;
+  text-align: center;
 }
 
 .services {
@@ -518,10 +519,11 @@ header {
     font-size: 32px;
   }
   .welcome-to-startup-link {
-    width: 290px;
+    width: 100%;
   }
   .welcome-to-startup-text {
     font-size: 16px;
+    text-align: center;
   }
   .about-us {
     padding: 0 10px;
@@ -548,19 +550,23 @@ header {
   .services-about-items-margin {
     margin-bottom: 0;
   }
+  .slick-slider {
+    left: -18px;
+  }
   .slick-list {
     left: 24px;
   }
   .slick-prev:before {
-    display: none;
+    display: none !important;
   }
   .slick-next:before {
-    display: none;
+    display: none !important;
   }
-  .slick-prev,
-  .slick-arrow,
-  .slick-next {
-    display: none;
+  .slick-arrow {
+    display: none !important;
+  }
+  .slick-prev {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
