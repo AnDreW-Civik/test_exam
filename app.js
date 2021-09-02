@@ -1,10 +1,10 @@
 $(".about-us-slider").slick({
   dots: false,
   infinite: true,
-  autoplay: true,
-  speed: 400,
+  autoplay: false,
+  speed: 800,
   slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToScroll: 2,
   responsive: [
     {
       breakpoint: 1024,

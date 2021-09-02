@@ -44,10 +44,11 @@ header {
 }
 .header {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header-logo {
-  display: block;
+  display: flex;
 }
 
 .header-menu {
@@ -91,7 +92,6 @@ header {
 .bg-img {
   height: 770px;
   width: 100%;
-  margin-top: -10px;
   background: url(img/header-bg.png) no-repeat 50% 50%;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -400,4 +400,76 @@ header {
 .about-us-slider-all:hover img {
   opacity: 0.8;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.767);
+}
+
+.header-menu > li {
+  margin-right: 15px;
+}
+
+.services-about-img:hover,
+.services-about-img-rock:hover,
+.services-about-img-expert:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.767);
+}
+
+@media (max-width: 767.3px) {
+  .col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .header-menu {
+    overflow-x: scroll;
+    padding-bottom: 12px;
+  }
+
+  .header-menu::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .header-logo {
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+
+  .welcome-to-startup-item {
+    font-size: 32px;
+  }
+
+  .welcome-to-startup-link {
+    width: 290px;
+  }
+
+  .welcome-to-startup-text {
+    font-size: 16px;
+  }
+
+  .about-us {
+    padding: 0 10px;
+    &-description {
+      flex-direction: column;
+      &-title {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .services-about {
+    display: flex;
+    flex-wrap: wrap;
+    &-items {
+      margin-bottom: 45px;
+    }
+  }
+  .margin {
+    margin-bottom: 0;
+  }
+  .slick-list {
+    left: 20px;
+  }
+  .slick-prev {
+    left: 20px;
+  }
+  .slick-next {
+    right: 35px;
+  }
 }
