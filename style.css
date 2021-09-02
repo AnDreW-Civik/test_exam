@@ -454,7 +454,7 @@ header {
 }
 
 .slick-next {
-  right: 40px;
+  right: 30px;
   z-index: 100;
 }
 
@@ -550,8 +550,12 @@ header {
   .services-about-items-margin {
     margin-bottom: 0;
   }
-  .slick-list {
-    left: 24px;
+  .about-us-image {
+    padding-right: 5px;
+  }
+  .slick-slider {
+    width: 100%;
+    padding-left: 40px;
   }
   .slick-prev:before {
     display: none !important;
@@ -564,6 +568,27 @@ header {
   }
   .slick-prev {
     display: none !important;
+  }
+}
+
+@media (max-width: 426px) {
+  .slick-slider {
+    width: 100%;
+    padding-left: 54px;
+  }
+}
+
+@media (max-width: 376px) {
+  .slick-slider {
+    width: 100%;
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 322px) {
+  .slick-slider {
+    width: 100%;
+    padding-left: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
