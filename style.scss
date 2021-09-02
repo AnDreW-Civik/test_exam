@@ -565,7 +565,7 @@ header {
   }
 
   .cover-link {
-    left: 33%;
+    left: 32%;
   }
 
   .latest-work-description {
@@ -648,12 +648,18 @@ header {
     width: 100%;
     padding-left: 54px;
   }
+  .cover-link {
+    left: 37%;
+  }
 }
 
 @media (max-width: 376px) {
   .slick-slider {
     width: 100%;
     padding-left: 35px;
+  }
+  .cover-link {
+    left: 35%;
   }
 }
 
