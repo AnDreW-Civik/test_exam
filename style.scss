@@ -55,7 +55,7 @@ header {
   display: flex;
   justify-content: space-between;
   &-link {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: $regular;
     text-decoration: none;
@@ -104,12 +104,12 @@ header {
     margin-bottom: 33px;
     color: $font-light;
     text-transform: uppercase;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: $regular;
     font-size: 48px;
   }
   &-text {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: $regular;
     font-size: 20px;
     color: $font-light;
@@ -122,7 +122,7 @@ header {
   }
   &-link {
     text-decoration: none;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: $regular;
     font-size: 16px;
     color: $font-light;
@@ -143,7 +143,7 @@ header {
   &-item {
     text-transform: uppercase;
     font-size: 20px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: $regular;
     color: $font-gray;
     position: relative;
@@ -163,7 +163,7 @@ header {
   }
   &-text {
     padding-top: 30px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: $regular;
     color: $font-gray;
@@ -219,7 +219,7 @@ header {
 .services-about-items {
   &-h2 {
     padding-top: 30px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: $regular;
     text-transform: uppercase;
@@ -229,7 +229,7 @@ header {
     padding-top: 25px;
     color: $font-gray;
     font-size: 14px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: $regular;
     line-height: 24px;
     text-align: center;
@@ -247,7 +247,7 @@ header {
     text-align: center;
     &-h2 {
       padding-bottom: 30px;
-      font-family: "Montserrat";
+      font-family: "Montserrat", sans-serif;
       font-weight: $regular;
       font-size: 20px;
       text-transform: uppercase;
@@ -278,7 +278,7 @@ header {
     &-title {
       color: $font-gray;
       font-size: 14px;
-      font-family: "Roboto";
+      font-family: "Roboto", sans-serif;
       font-weight: $regular;
       line-height: 24px;
       text-align: center;
@@ -290,7 +290,7 @@ header {
     text-align: center;
     font-size: 14px;
     text-transform: uppercase;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: $font-gray;
   }
@@ -298,7 +298,7 @@ header {
     text-align: center;
     color: $font-gray;
     font-size: 13px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: $regular;
   }
 }
@@ -415,12 +415,164 @@ header {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.767);
 }
 
+.latest-works {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.latest-works-heading {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $regular;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  color: $font-gray;
+  padding-bottom: 30px;
+}
+
+.latest-works-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: $font-gray;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+.latest-work-list {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.latest-work-items {
+  display: flex;
+  justify-content: center;
+  &-links {
+    margin-right: 25px;
+    &-a {
+      text-decoration: none;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      font-weight: $regular;
+      color: $font-gray;
+    }
+    &-a:hover {
+      color: $red;
+    }
+  }
+  &-links:last-child {
+    margin-right: 0;
+  }
+}
+
+.latest-work-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.latest-work-img {
+  margin-bottom: 25px;
+}
+.latest-work-img > img {
+  width: 100%;
+  height: auto;
+}
+.latest-work-img {
+  display: flex;
+  position: relative;
+}
+
+.cover-bg,
+.cover-title,
+.cover-parag,
+.cover-link {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.cover-title {
+  font-size: 18px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $regular;
+  top: 35%;
+  justify-content: center;
+}
+
+.cover-parag {
+  color: white;
+  top: 45%;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: $regular;
+}
+.cover-link {
+  width: 100px;
+  height: 40px;
+  padding-top: 12px;
+  padding-left: 5px;
+  top: 55%;
+  justify-content: center;
+  left: 35%;
+  text-decoration: none;
+  color: $red;
+  text-transform: uppercase;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: $regular;
+  font-size: 14px;
+}
+
+.latest-work-img:hover .cover-bg,
+.latest-work-img:hover .cover-title,
+.latest-work-img:hover .cover-parag,
+.latest-work-img:hover .cover-link {
+  display: flex;
+}
+
+.cover-bg {
+  background: $red;
+  -khtml-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
 @media (max-width: 767.3px) {
   .col-xs-12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .latest-work-items {
+    display: flex;
+    justify-content: space-around;
 
+    &-links {
+      margin-right: 5px;
+      &-a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .cover-link {
+    left: 31%;
+  }
+
+  .latest-work-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   .header-menu {
     overflow-x: scroll;
     padding-bottom: 12px;

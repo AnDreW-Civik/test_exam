@@ -1,7 +1,7 @@
 $(".about-us-slider").slick({
   dots: false,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   speed: 800,
   slidesToShow: 4,
   slidesToScroll: 2,
