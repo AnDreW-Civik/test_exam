@@ -231,6 +231,7 @@ header {
     font-family: "Roboto";
     font-weight: $regular;
     line-height: 24px;
+    text-align: center;
   }
 }
 
@@ -279,6 +280,7 @@ header {
       font-family: "Roboto";
       font-weight: $regular;
       line-height: 24px;
+      text-align: center;
     }
   }
   &-name {
@@ -460,16 +462,22 @@ header {
       margin-bottom: 45px;
     }
   }
-  .margin {
+  .services-about-items-margin {
     margin-bottom: 0;
   }
   .slick-list {
-    left: 20px;
+    left: 24px;
   }
-  .slick-prev {
-    left: 20px;
+
+  .slick-prev:before {
+    display: none;
   }
+  .slick-next:before {
+    display: none;
+  }
+  .slick-prev,
+  .slick-arrow,
   .slick-next {
-    right: 35px;
+    display: none;
   }
 }
