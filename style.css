@@ -550,9 +550,6 @@ header {
   .services-about-items-margin {
     margin-bottom: 0;
   }
-  .slick-slider {
-    left: -18px;
-  }
   .slick-list {
     left: 24px;
   }
@@ -567,18 +564,6 @@ header {
   }
   .slick-prev {
     display: none !important;
-  }
-}
-
-@media (max-width: 376px) {
-  .slick-slider {
-    left: 10px;
-  }
-}
-
-@media (max-width: 426px) {
-  .slick-slider {
-    left: 34px;
   }
 }
 /*# sourceMappingURL=style.css.map */
